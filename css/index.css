@@ -36,6 +36,14 @@ hr.divider {
   border-color: #f4623a;
 }
 
+hr.separator {
+  border-color: #eeeeee;
+  border-style: solid;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -124,4 +132,9 @@ header.masthead h1 {
 
 .page-section {
   padding: 8rem 0;
+}
+
+.page-heading {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
 }
