@@ -17,6 +17,12 @@ html {
   margin: 0 auto;
 }
 
+.portfolio-box img{
+  object-fit: cover;
+  width: 650px;
+  height: 300px;
+}
+
 .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
@@ -71,5 +77,15 @@ html {
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fancybox-button--arrow_left {
+    margin-left: 10%;
+  }
+  
+  .fancybox-button--arrow_right {
+    margin-right: 10%;
   }
 }
