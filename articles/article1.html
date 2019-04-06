@@ -2,6 +2,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav"> <div class="container"> <a class="navbar-brand js-scroll-trigger" href="../index.html">Almost CMS</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarResponsive"> <ul class="navbar-nav ml-auto my-2 my-lg-0"> <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="../about.html">About</a> </li> <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="index.html">Articles</a> </li> <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="../images/gallery/index.html">Gallery</a> </li> <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="../contact.html">Contact</a> </li> </ul> </div> </div> </nav>
   <!-- header section -->
+  <div class="body">
   <section class="page-heading bg-primary" id="about"> <div class="container"> <div class="row justify-content-center"> <div class="col-lg-8 text-center"> <h4 class="text-white mt-0">The latest on Almost CMS</h4> </div> </div> </div> </section>
   <!-- Body -->
   <section class="pt-5">
@@ -12,30 +13,11 @@
         <p><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">I don't really like wordpress, or PHP for that matter, and for whatever wordpress is good its definitely an overkill for the majority of the projects its being used in. for example, a traditional site that has a gallery and a news section were the owner/editor can write posts. Almost CMS is for these people and the goal is that it will empower these people to do a lot with very little because of :</span><br></p>
         <p></p>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="../images/almost-serverless.jpeg" alt="undefined" style="float:right;height: 300px;width: auto;"/>
-        </div>
-        <div class="col-md-6">
-          <ul>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Revolutionary serverless backend</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Uses AWS amplify react framework</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">S3 object storage</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">graphQL API</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">dynamoDB NoSQL database</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Other Lambda functions</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Light weight, fast, flexible</span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Ingenious template system with bootstrap 4 which produces raw html in traditional site structure that can be edited by the user </span></li>
-          <li><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">A powerful and flexible CLI</span><br></li>
-          </ul>
-      </div>
-      <div class="row">
-        <p><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">The purpose of almost CMS is to serve those customers that can benefit from having a completely customized static site but want to administer a little bit of content in their website like post an article every now and then, upload a product in their product catalog or add an image to their image gallery.  </span><span style="color: rgb(255,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Also to reduce the work from maintaining servers.  </span><br></p>
-        <p><span style="color: rgb(0,0,0);background-color: transparent;font-size: 11pt;font-family: Arial;">Almost CMS isn't really a CMS but its got a serverless admin style app that allows an admin user to upload pictures and write posts to an s3 bucket. As the admin adds content, a series of other lambda functions get triggered to create new pages for each article and update the index page for the articles page and the gallery page. There's also another function that gets triggered to re-write the xml sitemap everytime content is changed.</span><br></p>
-      </div>
+     
       <p></p>
     </div>
   </section>
+</div>
 
   <!-- Footer -->
   <footer class="bg-light py-5"> <div class="container-fluid"> <div class="row small text-center text-muted"> <div class="col-md-6"> <div>Copyright &copy; 2019 - Almost CMS</div> </div> <div class="col-md-6"> <div> Powered By <a href="http://torus.digital">Almost CMS</a></div> </div> </div> </div> </footer>

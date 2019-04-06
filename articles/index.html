@@ -29,6 +29,18 @@
 
 <body id="page-top">
 
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#articlesSearch").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#articlesTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
     <div class="container">
@@ -66,96 +78,69 @@
     </div>
   </section>
 
-  <!-- Body -->
-  <div class="body">
-    <section class="pt-5">
-      <div class="container">
-        <!-- Article 1 -->
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="img-fluid p-4" src="../img/default_img.jpg">
-          </div>
-          <div class="col-sm-8">
-            <div class="container p-4 p-4">
-              <div class="row">
-                <h2>
-                  Getting Started with Almost
-                </h2>
-              </div>
-              <div class="row">
-                <p>
-                  Article 1 is about getting started with this brand new awesome CMS right out of the box. A trully marvelous experience if you ask me.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="separator">
-        <!-- Article 2 -->
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="img-fluid p-4" src="../img/default_img.jpg">
-          </div>
-          <div class="col-sm-8">
-            <div class="container p-4 p-4">
-              <div class="row">
-                <h2>
-                  Just Follow through Guy
-                </h2>
-              </div>
-              <div class="row">
-                <p>
-                  Article 1 is about getting started with this brand new awesome CMS right out of the box. A trully marvelous experience if you ask me.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="separator">
-        <!-- Article 3 -->
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="img-fluid p-4" src="../img/default_img.jpg">
-          </div>
-          <div class="col-sm-8">
-            <div class="container p-4 p-4">
-              <div class="row">
-                <h2>
-                  Lorem Ipsum
-                </h2>
-              </div>
-              <div class="row">
-                <p>
-                  Hello jolly rancher watsup from the grapevine you know what it is.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="separator">
-        <!-- Article 4 -->
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="img-fluid p-4" src="../img/default_img.jpg">
-          </div>
-          <div class="col-sm-8">
-            <div class="container p-4 p-4">
-              <div class="row">
-                <h2>
-                  Lorem Dolres Sit
-                </h2>
-              </div>
-              <div class="row">
-                <p>
-                  Article 1 is about getting started with this brand new awesome CMS right out of the box. A trully marvelous experience if you ask me.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section class="bg-light">
+    <div class="row py-2 pr-lg-2">
+      <div class="col-sm-12 container text-center">
+        <input id="articlesSearch" type="text" class="float-lg-right search-bar" placeholder="Search..">
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <table>
+      <tbody id="articlesTable">
+        <tr class="container text-center text-md-left">
+          <div class="col-md-6">
+            <td>
+            <img class="img-fluid p-4" src="../img/default_img.jpg">
+          </td>
+          </div>
+          <div class="col-md-6 article-text">
+            <td class="h2 row article-title text-left">
+              Getting Started with Almost
+            </td>
+            <td class="row article-body text-left">
+              Article 1 is about getting started with this brand new awesome CMS right out of the box. A trully marvelous experience if you ask me.
+            </td>
+          </div>
+          
+        </tr>
+        <tr class="container">
+          <td>
+            <img class="img-fluid p-4" src="../img/default_img.jpg">
+          </td>
+          <td class="h2 row article-title">
+            JustFollow Through Guy
+          </td>
+          <td class="row article-body">
+            Article 1 is about getting started with this brand new awesome CMS right out of the box. A trully marvelous experience if you ask me.
+          </td>
+        </tr>
+        <tr class="container">
+          <td>
+            <img class="img-fluid p-4" src="../img/default_img.jpg">
+          </td>
+          <td class="h2 row article-title">
+            Sup Shit uduuy diii yeaaaaa girl
+          </td>
+          <td class="row article-body">
+            lkejcijeiocjeoi jdh3iuhdiuhweiudh diuwgdiugdiub dgigdiywgbd uydgig dvwiyegd weduygedv iylgeydgeudvdevd dy2gy23gdyvd d2yu3gdigd2d
+          </td>
+        </tr>
+        <tr class="container">
+          <td>
+            <img class="img-fluid p-4" src="../img/default_img.jpg">
+          </td>
+          <td class="h2 row article-title">
+            Lorem Ipsum
+          </td>
+          <td class="row article-body">
+            Hello jolly rancher watsup from the grapevine you know what it is.
+          </td>
+        </tr>         
+      </tbody>
+    </table>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-light py-5">
@@ -170,4 +155,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/creative.min.js"></script>
+
+</body>
+
+</html>
 
