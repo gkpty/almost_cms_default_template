@@ -29,6 +29,10 @@ html, body {
   min-height: 87vh;
 }
 
+.index-body {
+  min-height: 64vh;
+}
+
 .search-bar {
   padding: 5px;
   font-size: 120%;
@@ -36,12 +40,22 @@ html, body {
   border: 1px solid #eee;
 }
 
-#articlesTable tr {
-  border-bottom: 2px solid #eee;
-
+table {
+  width: 100vw;
+  height: auto;
 }
 
-@media(max-width: 780px) {
+#articlesTable tr {
+  border-bottom: 2px solid #eee;
+  height: auto;
+}
+
+.img-td {
+  text-align: center;
+  align-content: center;
+}
+
+@media(max-width: 700px) {
   .search-bar {
     width: 84%;
   }
@@ -63,19 +77,14 @@ html, body {
 
 .article-body {
   padding-bottom: 5%;
-  padding-right: 0%;
+  padding-right: 6%;
   padding-left: 4%;
 }
 
 .article-title {
   padding-top: 4%;
-  padding-right: 0%;
+  padding-right: 6%;
   padding-left: 4%;
-}
-}
-
-.article-title {
-  padding-top: 4%;
 }
 
 
@@ -89,7 +98,7 @@ hr {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #0288D1;
 }
 
 hr.separator {
@@ -97,7 +106,6 @@ hr.separator {
   border-style: solid;
   border-width: 1px 0;
 
-}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,7 +119,7 @@ p {
 }
 
 a {
-  color: #f4623a;
+  color: #0288D1;
   text-decoration: none;
   background-color: transparent;
 }
@@ -125,7 +133,7 @@ a {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, .3) 0%, rgba(92, 77, 66, 0.1) 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -149,6 +157,10 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3rem;
   }
+  .img-td {
+    width: 350px;
+    padding-left: 2%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -159,22 +171,22 @@ header.masthead h1 {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: #0288D1;
+  border-color: #0288D1;
 }
 
 .text-primary {
-  color: #f4623a !important;
+  color: #0288D1 !important;
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: #8BCCE2 !important;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: #0270AC;
+  border-color: #026399;
 }
 
 .btn-xl {
